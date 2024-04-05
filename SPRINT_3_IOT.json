@@ -1,0 +1,302 @@
+[
+    {
+        "id": "2b723946ff2e470d",
+        "type": "tab",
+        "label": "Inputs",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b9361e3dea034f4a",
+        "type": "ui_form",
+        "z": "2b723946ff2e470d",
+        "name": "",
+        "label": "Nome",
+        "group": "7a7a56eeedb118d0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Nome",
+                "value": "Nome",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Nome": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "438f87af9b28e6df"
+            ]
+        ]
+    },
+    {
+        "id": "cc093fde68a57370",
+        "type": "ui_date_picker",
+        "z": "2b723946ff2e470d",
+        "name": "",
+        "label": "date",
+        "group": "7a7a56eeedb118d0",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "",
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "02ba27e192ea8fae"
+            ]
+        ]
+    },
+    {
+        "id": "123b6edc88b34778",
+        "type": "ui_form",
+        "z": "2b723946ff2e470d",
+        "name": "",
+        "label": "Email",
+        "group": "7a7a56eeedb118d0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Email": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "c749f6e453aa53bc"
+            ]
+        ]
+    },
+    {
+        "id": "dab21541222aed84",
+        "type": "ui_form",
+        "z": "2b723946ff2e470d",
+        "name": "",
+        "label": "Time",
+        "group": "7a7a56eeedb118d0",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Time",
+                "value": "Time",
+                "type": "time",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Time": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "ba598fb1baaa7d40"
+            ]
+        ]
+    },
+    {
+        "id": "9d3ae370f72f9a2c",
+        "type": "ui_form",
+        "z": "2b723946ff2e470d",
+        "name": "",
+        "label": "Age",
+        "group": "7a7a56eeedb118d0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Age",
+                "value": "Age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Age": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "d5700c8d5c39602c"
+            ]
+        ]
+    },
+    {
+        "id": "438f87af9b28e6df",
+        "type": "debug",
+        "z": "2b723946ff2e470d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c749f6e453aa53bc",
+        "type": "debug",
+        "z": "2b723946ff2e470d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d5700c8d5c39602c",
+        "type": "debug",
+        "z": "2b723946ff2e470d",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ba598fb1baaa7d40",
+        "type": "debug",
+        "z": "2b723946ff2e470d",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "40851a939ccf7645",
+        "type": "debug",
+        "z": "2b723946ff2e470d",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "02ba27e192ea8fae",
+        "type": "function",
+        "z": "2b723946ff2e470d",
+        "name": "function 1",
+        "func": "var date = new Date(msg.payload);\nmsg.payload = date.toString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "40851a939ccf7645"
+            ]
+        ]
+    },
+    {
+        "id": "7a7a56eeedb118d0",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "f9a53a170bdea637",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f9a53a170bdea637",
+        "type": "ui_tab",
+        "name": "Inputs",
+        "icon": "fa-keyboard-o",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]

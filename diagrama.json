@@ -1,0 +1,39 @@
+{
+    "version": 1,
+    "author": "Matheus Farias de Lima",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-breadboard", "id": "bb1", "top": 189, "left": -285.2, "attrs": {} },
+      { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -48, "left": -23.96, "attrs": {} },
+      { "type": "wokwi-potentiometer", "id": "pot1", "top": -126.1, "left": -125, "attrs": {} },
+      {
+        "type": "wokwi-buzzer",
+        "id": "bz1",
+        "top": -16.8,
+        "left": 213,
+        "attrs": { "volume": "0.1" }
+      },
+      {
+        "type": "wokwi-ntc-temperature-sensor",
+        "id": "ntc1",
+        "top": -16.6,
+        "left": -384.6,
+        "attrs": {}
+      }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "bz1:2", "bb1:tn.44", "black", [ "v0" ] ],
+      [ "bz1:1", "esp:27", "green", [ "v115.2", "h-288", "v-105.6", "h9.6" ] ],
+      [ "pot1:VCC", "bb1:tp.15", "red", [ "h-0.8", "v76.8", "h-8.8" ] ],
+      [ "pot1:GND", "bb1:tn.14", "black", [ "v0" ] ],
+      [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+      [ "ntc1:GND", "bb1:tn.10", "black", [ "h0" ] ],
+      [ "ntc1:VCC", "bb1:tp.9", "red", [ "h0" ] ],
+      [ "ntc1:OUT", "esp:35", "green", [ "h0" ] ],
+      [ "bb1:tp.1", "esp:3V3", "red", [ "v0" ] ],
+      [ "esp:GND.2", "bb1:tn.1", "black", [ "h48", "v192", "h-432", "v38.5" ] ]
+    ],
+    "dependencies": {}
+  }
